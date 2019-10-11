@@ -5,8 +5,8 @@
 
 //Cac chuc nang cuoi cung ma nguoi dung se su dung
 
-void timKiemSachTheoTen(List list);
-void timKiemSachTheoMa(List list);
+void timKiemSachTheoTen(BookList list);
+void timKiemSachTheoMa(BookList list);
 
 void timKiemSach(List list);
 #endif // !FUNCTION_H

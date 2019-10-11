@@ -3,43 +3,29 @@
 
 #include "Book.h"
 
-class NODE {
-private:
-	Sach book;
-	NODE* pNext;
-public:
-	NODE();
-	NODE(Sach);
-	~NODE();
-	
-	
-	NODE* getNext();
-	Sach getData();
-	void setData(Sach);
-	void setNext(NODE* pNext);
-	void input();
-	void print();
-};
-
-class List
+class BookList
 {
 private:
-	NODE* pHead;
-	int soSach;
+	vector<Sach> bookList;
 public:
-	List();
-	List(int);
-	~List();
+	BookList();
+	~BookList();
 
 	bool isEmptyList();
 
 	void input(int);
-	void addLast(NODE* p);
 
-	NODE* searchByName(string);
-	NODE* searchByISBN(string);
+	Sach getBook(int );
 
-	void xoaSach(Sach* sach);
+	int searchByName(string);
+	int searchByISBN(string);
+
+	void xoaSach(int);
+};
+
+class BillList {
+private:
+	vector<Bill> billList;
 };
 
 #endif
