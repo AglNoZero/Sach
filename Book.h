@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Sach
@@ -29,8 +30,6 @@ public:
 
 	void input();
 	void print();
-
-	friend class List;
 };
 
 
